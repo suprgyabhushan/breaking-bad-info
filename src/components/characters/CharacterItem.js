@@ -30,7 +30,7 @@ const CharacterItem = ({ item }) => {
               <strong>Appearance:</strong> {item.appearance.join(",")}
             </li>   
             <li>
-              <strong>Link To All Quotes:</strong> <a download = "Quotes.txt" href={"https://www.breakingbadapi.com/api/quote?author="+ item.name}>Link</a> 
+              <strong>Link To All Quotes:</strong> <a download = "Quotes.txt" href={"https://www.breakingbadapi.com/api/quote?author="+ item.name} target="__blank">Open Link</a> 
             </li>                
           </ul> 
           <CharacterQuote key={item.char_id} item={item}></CharacterQuote>    
