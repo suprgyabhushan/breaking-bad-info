@@ -1,4 +1,5 @@
 import React from 'react'
+import CharacterQuote from './CharacterQuote'
 
 const CharacterItem = ({ item }) => {
   return (
@@ -8,7 +9,7 @@ const CharacterItem = ({ item }) => {
           <img src={item.img} alt='' />
         </div>
         <div className='card-back'>
-          <h1>{item.name}</h1>
+          <h1>{item.name}</h1>  
           <ul>
             <li>
               <strong>Birthday:</strong> {item.birthday}
@@ -29,10 +30,11 @@ const CharacterItem = ({ item }) => {
               <strong>Appearance:</strong> {item.appearance.join(",")}
             </li>   
             <li>
-              <strong>All Quotes:</strong> <a href={"https://www.breakingbadapi.com/api/quote?author="+ item.name} target="_blank">Link</a> 
-            </li>            
-          </ul>
-        </div>
+              <strong>Link To All Quotes:</strong> <a download = "Quotes.txt" href={"https://www.breakingbadapi.com/api/quote?author="+ item.name}>Link</a> 
+            </li>                
+          </ul> 
+          <CharacterQuote key={item.char_id} item={item}></CharacterQuote>    
+          </div>
       </div>
     </div>
   )
