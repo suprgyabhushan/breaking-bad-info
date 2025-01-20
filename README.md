@@ -1,6 +1,6 @@
 # Breaking Bad Info
 
-React project that uses the [breaking bad api](https://breakingbadapi.com/documentation).
+React project that uses the [Breaking-Bad API](https://breakingbadapi.com/documentation).
 
 # Usage
 
